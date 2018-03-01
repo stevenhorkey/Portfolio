@@ -1,25 +1,79 @@
 body{
-    background: linear-gradient(rgba(250, 235, 215, 0.5),rgba(250, 235, 215, 0.5)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-0.3.5&s=2e7538690c595f98efb01d780d4ce986&auto=format&fit=crop&w=1950&q=80');
-    background-position: center;
-    background-size: cover;
     height: 100vh;
-    font-family: 'Vollkorn SC', serif;
+    /* font-family: 'Vollkorn SC', serif; */
     font-family: 'Eczar', serif;
-
+    color: white;
+    background-color: black;
 }
-
-
-h1{
-    color: black;
-    font-size: 30px;
-    text-align: center;
-}
-
+/* Head Section */
 .head{
-    height: 100vh;
+    height: 102vh;
     width: 100vw;
     text-align: center;
-    top: 40vh;
     position: relative;
-    
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1508881598441-324f3974994b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2aef1e2f3895c40e891654ae51f9c1e3&auto=format&fit=crop&w=2850&q=80');
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;    
+    -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 98%);
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 98%);
+}
+.head-content{
+    position: relative;
+    top: 20vh;   
+    margin: 0 auto; 
+}
+.head-myname{
+    font-size: 60px;
+    text-align: center;
+}
+.head-meta{
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.email{
+    font-family: monospace;
+    font-size: 16px;
+}
+.steven-headshot{
+    width: 200px;
+    border-radius: 100px;
+    margin: 20px;
+    border: 1px solid white;
+}
+.slant{
+    -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+}
+/* About Section */
+.about{
+    min-height: 52vh;
+    background:black;
+    color: white;
+    border: white 2px solid;
+    width: 100%;
+}
+.devi-icons{
+    position: relative;
+    top: 5vh;
+    float: left;
+    font-size: 5vw;
+    position: relative;
+    top: 50%;
+}
+.about-content{
+    position: relative;
+    top: 5vh;
+    float: right;
+}
+.about-title{
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
