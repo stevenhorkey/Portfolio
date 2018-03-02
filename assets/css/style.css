@@ -5,6 +5,9 @@ body{
     color: white;
     background-color: black;
 }
+h2{
+    text-align: center;
+}
 /* Head Section */
 .head{
     height: 102vh;
@@ -15,9 +18,10 @@ body{
     background-position: center;
     background-attachment: scroll;
     background-size: cover;    
-    -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 98%);
-    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 98%);
+    /* -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 98%);
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 98%); */
 }
+
 .head-content{
     position: relative;
     top: 20vh;   
@@ -33,7 +37,7 @@ body{
 }
 .email{
     font-family: monospace;
-    font-size: 16px;
+    font-size: 18px;
 }
 .steven-headshot{
     width: 200px;
@@ -42,34 +46,33 @@ body{
     border: 1px solid white;
 }
 .slant{
-    -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
-    clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
+}
+/* Sections */
+section{
+    min-height: 50vh;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif; 
+    padding: 5vh 1vh;
+       
 }
 /* About Section */
 .about{
-    min-height: 52vh;
     background:black;
     color: white;
-    border: white 2px solid;
-    width: 100%;
 }
 .devi-icons{
     position: relative;
-    top: 5vh;
-    float: left;
     font-size: 5vw;
     position: relative;
+    text-align: center;
     top: 50%;
 }
 .about-content{
     position: relative;
-    top: 5vh;
     float: right;
-}
-.about-title{
-    text-align: center;
-    margin: 20px 0;
-
+    text-align: justify;
 }
 
 .clearfix::after {
@@ -77,3 +80,20 @@ body{
     clear: both;
     display: table;
 }
+/* Portfolio */
+.portfolio{
+    min-height: 50vh;
+}
+
+/* Port1-2 */
+.port-white{
+    background-color: #4F5357;
+}
+.port-black{
+    background-color: black
+}
+/* Contact */
+
+
+
+/* misc. */
