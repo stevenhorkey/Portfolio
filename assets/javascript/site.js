@@ -1,15 +1,71 @@
-var backgrounds = ["https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-0.3.5&s=2e7538690c595f98efb01d780d4ce986&auto=format&fit=crop&w=1950&q=80","https://images.unsplash.com/photo-1467294388771-b3e867a4d321?ixlib=rb-0.3.5&s=914592383364aed60abbfaf7b74d9ad4&auto=format&fit=crop&w=1950&q=80","https://images.unsplash.com/photo-1471644518115-1f02e9819854?ixlib=rb-0.3.5&s=6afe7499e74e46572790bac38ddeedd1&auto=format&fit=crop&w=1950&q=80","https://images.unsplash.com/photo-1471931452361-f5ff1faa15ad?ixlib=rb-0.3.5&s=c1a1e60a97e82473cf5130fc427c10f4&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1476644542099-388b8e820a81?ixlib=rb-0.3.5&s=2019c8c5caaed0136c5923b3e77fe2ad&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1472642718269-447cc4f054d2?ixlib=rb-0.3.5&s=84e03e9102b71bec01fec6f5657333e6&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1494625927555-6ec4433b1571?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9eb1fe2088d1ea96d4d49428b83876ff&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1477813594830-ffe28bcac950?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd5e6afb672d8b3656b44069345157f1&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1482590519864-5cb070228c8a?ixlib=rb-0.3.5&s=44d1c529c1accacef0b1db6624f28c65&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1459604356901-e62d22229cda?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9588c7e6b8d681e22bbaaf6b343f5e32&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1483639092905-bad36a65abfe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9671cd8c2fef1a0f66d5453c31057509&auto=format&fit=crop&w=800&q=60","https://images.unsplash.com/photo-1459539235056-5045ca20e525?ixlib=rb-0.3.5&s=530efa3b660a7bd06072987a98c1bc34&auto=format&fit=crop&w=800&q=60"]
-
-random = Math.floor(Math.random() * backgrounds.length);
-console.log(random)
+var site = {
+    projects : {
+        'gifApp' : {
+            name : "GifTastic",
+            img : 'https://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg',
+            discription : 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishin',
+            url : 'https://www.w3schools.com/jsref/jsref_tostring_number.asp',
+        },
+        'koanGame' : {
+            name : "Zen Koan Game",
+            img : 'https://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg',
+            discription : 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishin',
+            url : 'https://www.w3schools.com/jsref/jsref_tostring_number.asp',
+        },
+        'lotrGame' : {
+            name : "Lord of the Rings PRG",
+            img : 'https://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg',
+            discription : 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishin',
+            url : 'https://www.w3schools.com/jsref/jsref_tostring_number.asp',
+        },
+        // 'mmSite' : {
+        //     name : ,
+        //     img : ,
+        //     discription : ,
+        //     url : ,
+        // },
+        // 'five' : {
+        //     name : ,
+        //     img : ,
+        //     discription : ,
+        //     url : ,
+        // },
+        // 'six' : {
+        //     name : ,
+        //     img : ,
+        //     discription : ,
+        //     url : ,
+        // }
+    },
+    functions : {
+        buildProject : function(pLabel, imgLayout, projClass){
+            var project = $('<div>');
+            project.addClass(pLabel.name.replace(/\s+/g, '-').toLowerCase());
+            var image = $('<img>').attr("src", pLabel.img);
+            image.addClass('col-md-6');
+            var text = $('<div>').addClass('project-text col-md-6');
+            var title = $('<h2>').addClass('project-title');
+            title.text(pLabel.name);
+            var description = $('<p>').addClass('project-description');
+            description.text(pLabel.description);
+            var checkUrl = $('<a>').attr('href',pLabel.url).attr('target','_blank');
+            checkUrl.addClass('project-url').text("Check it out here")
+            text.append(title).append(description).append(checkUrl);
+            if (imgLayout === 'right'){
+                project.append(text).append(image); 
+                text.css('float','left') ;
+            } else if (imgLayout === 'left') {
+                project.append(image).append(text);
+                text.css('float','right') ;                
+            } else {
+                alert('error with project build')
+            }
+            $(projClass).append(project)
+        }
+    }
+}
 
 
 $(document).ready(function(){
-    // $('body').css({
-    //     'background':'url('+backgrounds[random]+')',
-    //     'background-position':'scroll',
-    //     'background-size':'cover',
-    //     'height':'100vh',
-    //     'font-family':'"Vollkorn SC", serif'
-    // })
+    site.functions.buildProject(site.projects.gifApp,'left','.proj-1')
 });
