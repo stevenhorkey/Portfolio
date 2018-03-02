@@ -8,6 +8,9 @@ body{
 h2{
     text-align: center;
 }
+section p{
+    text-align: justify;
+}
 /* Head Section */
 .head{
     height: 102vh;
@@ -55,6 +58,7 @@ section{
     width: 100%;
     font-family: 'Ubuntu', sans-serif; 
     padding: 5vh 1vh;
+    
        
 }
 /* About Section */
