@@ -100,7 +100,31 @@ section{
     min-height: 50vh;    
 }
 /* Contact */
+.project-image{
+    margin: 33px 0;
+}
+.project-text{
+    text-align: center;
+    margin: 59px 0;
+}
+.project-url{
+    text-align: center;
+    background: none;
+    border-radius: 10px;
+    color: white;
+    border: white 1px solid;
+    padding: 6px;
+    -webkit-transition:  color .5s; /* Safari */
+    transition: color .5s;
+    text-decoration: none;
+}
+.project-url:hover{
+    color: #EFDA5B;
+    text-decoration: none;
+}
 
 
-
-/* misc. */
+/* Footer */
+footer{
+    text-align: center;
+}
