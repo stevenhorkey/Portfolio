@@ -2,40 +2,28 @@ var site = {
     projects : {
         'gifApp' : {
             name : "GifTastic",
-            img : 'assets/images/gifapp.gif',
+            img : 'assets/images/gifapp.jpg',
             discription : 'GifTastic is a JQuery based web application which utilizes the Giphy API. The user is able to enter a topic and the amount of gifs they want generated. A button is then dynamically created and once it is clicked...Presto! The gifs are displayed. ',
             url : 'https://stevenhorkey.github.io/GifTastic/',
         },
         'koanGame' : {
             name : "Zen Koan Game",
-            img : 'assets/images/zengif.gif',
+            img : 'assets/images/zen.jpg',
             discription : 'What is the sound of one hand clapping? Koans are esoteric riddles that defy logical thinking and that is certainly the case in this JQuery based game. There are 15 questions, each with four possible answers. Think you get get em\' all right?',
             url : 'https://stevenhorkey.github.io/TriviaGame/',
         },
         'lotrGame' : {
             name : "Lord of the Rings PRG",
-            img : 'assets/images/test.png',
+            img : 'assets/images/lotr.jpg',
             discription : 'Gandalf\'s dilema is a JQuery based Lord of the Rings RPG game where you play as either Smeagol, the Balrog, Sauron, or Gandalf himself. Each time you attack, you also endure some damage, but your power grows evermore. You may win, you may loose, or you all may die in the process. Which will it be?',
             url : 'https://stevenhorkey.github.io/week-4-game/',
         },
-        // 'mmSite' : {
-        //     name : ,
-        //     img : ,
-        //     discription : ,
-        //     url : ,
-        // },
-        // 'five' : {
-        //     name : ,
-        //     img : ,
-        //     discription : ,
-        //     url : ,
-        // },
-        // 'six' : {
-        //     name : ,
-        //     img : ,
-        //     discription : ,
-        //     url : ,
-        // }
+        'hangmanGame' : {
+            name : "60's Hangin' Man",
+            img : "assets/images/hangman.jpg",
+            discription : "Play a sixties themed hangman game and guess some of the best bands of the era. Pink Floyd, Jimi Hendrix, and The Beatles are included among many others. The song played during the game is a cover by non other than your's truly.",
+            url : 'https://stevenhorkey.github.io/Hangman-Game/',
+        },
     },
     functions : {
         buildProject : function(pLabel, imgLayout, projClass){
@@ -67,7 +55,57 @@ var site = {
 
 
 $(document).ready(function(){
-    site.functions.buildProject(site.projects.gifApp,'left','.proj-1')
-    site.functions.buildProject(site.projects.koanGame,'right','.proj-2')
-    site.functions.buildProject(site.projects.lotrGame,'left','.proj-3')
+    $('.head-content').hide();
+    $('.head-content').fadeIn(1200);
+    site.functions.buildProject(site.projects.gifApp,'left','.proj-1');
+    site.functions.buildProject(site.projects.koanGame,'right','.proj-2');
+    site.functions.buildProject(site.projects.lotrGame,'left','.proj-3');
+    site.functions.buildProject(site.projects.hangmanGame,'right','.proj-4');
+    // Select all links with hashes
+    $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+    // On-page links
+        if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+        ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000, function() {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                return false;
+                } else {
+                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
+                };
+            });
+            }
+        }
+    });
+
+    AOS.init();
+
+    // $('.email').on("hover",function(){
+
+    // })
+
 });
+
+/*
+Much thanks to AOS library for the scroll animations!
+*/

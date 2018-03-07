@@ -26,6 +26,8 @@ section p{
     clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 98%); */
 }
 
+
+
 .head-content{
     position: relative;
     top: 20vh;   
@@ -42,6 +44,21 @@ section p{
 .email{
     font-family: monospace;
     font-size: 18px;
+    color: white;
+    padding: 6px;
+    border: white 1px solid;
+    border-radius: 12px;
+    line-break: 1em;
+    -webkit-transition:  all .2s; /* Safari */
+    transition: all .2s;
+    
+}
+.email:hover{
+    color: #EFDA5B;
+    text-decoration: none;
+    border: #EFDA5B 1px solid;
+    background-color: rgba(0, 0, 0, 0.3);
+
 }
 .steven-headshot{
     width: 200px;
@@ -52,6 +69,20 @@ section p{
 .slant{
     -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
     clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
+}
+.page-links{
+    margin: 20px;
+}
+.page-links a{
+    margin: 14px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    -webkit-transition:  color .2s; /* Safari */
+    transition: color .2s;
+}
+.page-links a:hover{
+    color: #EFDA5B;
 }
 /* Sections */
 section{
@@ -68,7 +99,7 @@ section{
 }
 .devi-icons{
     position: relative;
-    font-size: 70px;
+    font-size: 60px;
     position: relative;
     text-align: center;
     top: 25%;
@@ -99,9 +130,17 @@ section{
 .port-black{
     min-height: 50vh;    
 }
+.contact{
+    background-color: #4f5357;
+    background-image: url("https://www.transparenttextures.com/patterns/black-linen-2.png");
+    text-align: center;
+    -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 100%);
+}
 /* Contact */
 .project-image{
     margin: 33px 0;
+    border-radius: 5px;
 }
 .project-text{
     text-align: center;
@@ -114,15 +153,15 @@ section{
     color: white;
     border: white 1px solid;
     padding: 6px;
-    -webkit-transition:  color .5s; /* Safari */
-    transition: color .5s;
+    -webkit-transition:  all .2s; /* Safari */
+    transition: all .2s;
     text-decoration: none;
 }
 .project-url:hover{
     color: #EFDA5B;
     text-decoration: none;
+    background: rgba(0, 0, 0, 0.3);
 }
-
 
 /* Footer */
 footer{

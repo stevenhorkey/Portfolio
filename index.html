@@ -12,13 +12,17 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <!-- Devicons -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Scroll -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Javascript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
     <script src="assets/javascript/site.js"></script>
+    
 </head>
 <body>
     <div class="head">
@@ -28,23 +32,27 @@
                     <img src="assets/images/steven1.jpg" class="steven-headshot"/>
                     <h1 class="head-myname">Steven Horkey</h1>
                     <p class="head-meta">Full Stack Web Developer</p>
-                    <a href="href="mailto:stevedevtech@gmail.com"" class="email">stevedevtech@gmail.com</a>
+                    <a href="mailto:stevedevtech@gmail.com" class="email">stevedevtech@gmail.com</a>
+                    <div class="page-links"><a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href="#contact">Contact</a></div>
                 </div>
             </div>
         </div>
     </div>
-
-    <section class="about slant">
+    
+    <section class="about slant" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="devi-icons">
+                    <div class="devi-icons" data-aos="flip-down">
                             <i class="devicon-github-plain-wordmark"></i>
+                            <i class="devicon-slack-plain-wordmark"></i>
                             <i class="devicon-html5-plain-wordmark colored"></i>
                             <i class="devicon-css3-plain-wordmark colored"></i>
                             <i class="devicon-bootstrap-plain-wordmark colored"></i>
                             <i class="devicon-javascript-plain colored"></i>
                             <i class="devicon-jquery-plain-wordmark colored"></i>
+                            <i class="devicon-python-plain-wordmark colored"></i>
+
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -59,44 +67,55 @@
         </div>
     </section>
     <!-- Portfolio -->
-    <div class="portfolio'">
-
+    <div id="portfolio">
+        <section class="portfolio port-grey slant">
+            <div class="container">
+                <div class="row proj-1" data-aos="fade-right" data-aos-offset="200">
+                    
+                </div>
+            </div>
+        </section>
+        <section class="portfolio port-black " >
+            <div class="container">
+                <div class="row proj-2" data-aos="fade-left" data-aos-offset="200">
+                    
+                </div>
+            </div>
+        </section>
+        <section class="portfolio port-grey slant">
+            <div class="container">
+                <div class="row proj-3" data-aos="fade-right" data-aos-offset="200">
+                    
+                </div>
+            </div>
+        </section>
+        <section class="portfolio port-black ">
+            <div class="container">
+                <div class="row proj-4" data-aos="fade-left">
+                    
+                </div>
+            </div>
+        </section>
     </div>
-    <section class="portfolio port-grey slant">
-        <div class="container">
-            <div class="row proj-1">
-                
-            </div>
-        </div>
-    </section>
-    <section class="portfolio port-black ">
-        <div class="container">
-            <div class="row proj-2">
-                
-            </div>
-        </div>
-    </section>
-    <section class="portfolio port-grey slant">
-        <div class="container">
-            <div class="row proj-3">
-                
-            </div>
-        </div>
-    </section>
+    
     <!-- Contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="contact">
+                    <div>
                         <h2>Contact</h2>
+                        <p>Have a project you need help on? Feel free to contact me and well see if we can work something out. Thanks!</p>
+                        <br>
+                        <a href="mailto:stevedevtech@gmail.com" class="email">stevedevtech@gmail.com</a>
+                        
                         
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="interests">
-                        <h2>Interests</h2>
-                        <p>My interests are wide ranging and I like to think I take a holistic approach to life. I am particularly interested in fields like philosophy, meditation, and psychology as well as anything related to music and health. When I'm not coding, I am either reading, writing, playing guitar, out on a trail, helping out around town, or working on my personal development. I also have a fondness for goats :)</p>
+                        <h2>More About Me</h2>
+                        <p>My interests are wide ranging and I like to think I take a holistic approach to life. I am particularly interested in fields like philosophy, meditation, and psychology as well as anything related to music and health. When I'm not coding or doing school work, I am either reading, writing, playing guitar, out on a trail, helping out around town, or working on my personal development. I am also a radical animal lover :)</p>
                     </div>
                 </div>
             </div>
@@ -109,6 +128,7 @@
             </div>
         </div>
     </footer> -->
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </body>
 </html>
 
