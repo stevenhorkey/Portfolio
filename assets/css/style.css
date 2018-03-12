@@ -131,7 +131,7 @@ section{
     min-height: 50vh;    
 }
 .contact{
-    background-color: #4f5357;
+    background-color: #000000;
     background-image: url("https://www.transparenttextures.com/patterns/black-linen-2.png");
     text-align: center;
     -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);

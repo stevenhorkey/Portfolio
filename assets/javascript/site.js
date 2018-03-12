@@ -24,6 +24,12 @@ var site = {
             discription : "Play a sixties themed hangman game and guess some of the best bands of the era. Pink Floyd, Jimi Hendrix, and The Beatles are included among many others. The song played during the game is a cover by non other than your's truly.",
             url : 'https://stevenhorkey.github.io/Hangman-Game/',
         },
+        'rps': {
+            name : "Rock Paper Scissors Multiplayer",
+            img : "assets/images/rps.jpg",
+            discription : "A multiplayer rock paper scissors game that uses firebase to store and update data across machines. Showcases an initial step toward developing appliactions on both the front and back end.",
+            url : 'https://stevenhorkey.github.io/RPS-Multiplayer/'
+        }
     },
     functions : {
         buildProject : function(pLabel, imgLayout, projClass){
@@ -57,10 +63,11 @@ var site = {
 $(document).ready(function(){
     $('.head-content').hide();
     $('.head-content').fadeIn(1200);
-    site.functions.buildProject(site.projects.gifApp,'left','.proj-1');
-    site.functions.buildProject(site.projects.koanGame,'right','.proj-2');
-    site.functions.buildProject(site.projects.lotrGame,'left','.proj-3');
-    site.functions.buildProject(site.projects.hangmanGame,'right','.proj-4');
+    site.functions.buildProject(site.projects.rps,'left','.proj-1');
+    site.functions.buildProject(site.projects.gifApp,'right','.proj-2');
+    site.functions.buildProject(site.projects.koanGame,'left','.proj-3');
+    site.functions.buildProject(site.projects.lotrGame,'right','.proj-4');
+    site.functions.buildProject(site.projects.hangmanGame,'left','.proj-5');
     // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
