@@ -107,9 +107,6 @@ $(document).ready(function(){
 
     AOS.init();
 
-    // $('.email').on("hover",function(){
-
-    // })
 
 });
 

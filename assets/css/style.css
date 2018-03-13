@@ -1,10 +1,11 @@
 body{
-    height: 100vh;
+    width: 100vw;
     /* font-family: 'Vollkorn SC', serif; */
     font-family: 'Eczar', serif;
     color: white;
     background-color: #000000;
     background-image: url("https://www.transparenttextures.com/patterns/black-linen-2.png");
+
 }
 h2{
     text-align: center;
@@ -89,7 +90,7 @@ section{
     min-height: fit-content;
     width: 100%;
     font-family: 'Ubuntu', sans-serif; 
-    padding: 5vh 1vh;
+    padding: 20px 0;
     
        
 }
@@ -102,7 +103,8 @@ section{
     font-size: 60px;
     position: relative;
     text-align: center;
-    top: 25%;
+    justify-content: center;
+
 }
 .about-content{
     position: relative;
@@ -116,12 +118,16 @@ section{
     clear: both;
     display: table;
 }
+@media screen and (max-width: 767px){
+    .devi-icons{
+        margin-bottom: 15vw;
+    }
+
+}
 /* Portfolio */
 .portfolio{
     min-height: 50vh;
 }
-
-/* Port1-2 */
 .port-grey{
     min-height: 53vh;    
     background-color: #4f5357;
@@ -130,6 +136,10 @@ section{
 .port-black{
     min-height: 50vh;    
 }
+.portfolio>img{
+    width: 280px;
+}
+/* Contact */
 .contact{
     background-color: #000000;
     background-image: url("https://www.transparenttextures.com/patterns/black-linen-2.png");
@@ -137,7 +147,6 @@ section{
     -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
     clip-path: polygon(0 0%, 100% 5%, 100% 100%, 0% 100%);
 }
-/* Contact */
 .project-image{
     margin: 33px 0;
     border-radius: 5px;
@@ -153,7 +162,7 @@ section{
     color: white;
     border: white 1px solid;
     padding: 6px;
-    -webkit-transition:  all .2s; /* Safari */
+    -webkit-transition:  all .2s;
     transition: all .2s;
     text-decoration: none;
 }
