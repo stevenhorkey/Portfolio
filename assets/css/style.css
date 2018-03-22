@@ -108,15 +108,27 @@ section{
 .about{
     color: white;
 }
+.pride{
+    text-align: center;
+    font-style: italic;
+}
 .devi-icons{
     position: relative;
     font-size: 60px;
     position: relative;
     text-align: center;
     justify-content: center;
-    top: 33%;
-    bottom: 25%;
+    margin: 30px auto;
+    text-decoration: none;
 
+    /* top: 33%; */
+    /* bottom: 25%; */
+
+}
+.firebase-icon{
+    width: 60px;
+    position: relative;
+    bottom: 10px;
 }
 .about-content{
     position: relative;
@@ -194,6 +206,8 @@ section{
     background: none;
     border-radius: 10px;
     color: white;
+    width: 138px;
+    margin: 0 auto;
     border: white 1px solid;
     padding: 6px;
     -webkit-transition:  all .2s;
