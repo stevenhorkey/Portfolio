@@ -45,9 +45,8 @@ var site = {
             img: "assets/images/verse.jpg",
             discription: "A fully function rap battle game that integrates multiple api's, social sharing, and numerous libraries",
             url: 'http://verse.games/',
-            tech: ['Giphy API','Words API','Bootstrap 4','JQuery','AOS Scroll','AddThis','Aja',''],
-            skills: ['worked in group',''],
-
+            tech: [],
+            skills: [],
         }
     },
     functions : {
@@ -62,13 +61,13 @@ var site = {
             var description = $('<p>').addClass('project-description');
             description.text(pLabel.discription);
             var tech = $('<ul>').addClass('col-md-6 proj-tech').append('');
-            tech.append('<h5>Tech</h5>').css('float','left');;
+            tech.css('float','left');;
             for(var i = 0; i<pLabel.tech.length; i++){
                 var point = $('<li></li>').text(pLabel.tech[i]);
                 tech.append(point);
             }
             var skills = $('<ul>').addClass('col-md-6 proj-skills');
-            skills.append('<h5>Skills</h5>').css('float','right');
+            skills.css('float','right');
             for(var i = 0; i<pLabel.skills.length; i++){
                 var point = $('<li></li>').text(pLabel.skills[i]);
                 tech.append(point);
