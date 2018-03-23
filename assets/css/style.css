@@ -120,10 +120,14 @@ section{
     justify-content: center;
     margin: 30px auto;
     text-decoration: none;
+    color: white;
 
     /* top: 33%; */
     /* bottom: 25%; */
 
+}
+.devicon-github-plain-wordmark{
+    color: white;
 }
 .firebase-icon{
     width: 60px;
@@ -196,6 +200,10 @@ section{
     border-radius: 5px;
     top: 1%;
     width: 100%;
+}
+.proj-tech,
+.proj-skills{
+    text-align: left;
 }
 .project-text{
     text-align: center;
