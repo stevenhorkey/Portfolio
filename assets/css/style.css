@@ -204,6 +204,7 @@ section{
 .proj-tech,
 .proj-skills{
     text-align: left;
+    padding-left: 10%;
 }
 .project-text{
     text-align: center;
@@ -221,6 +222,9 @@ section{
     -webkit-transition:  all .2s;
     transition: all .2s;
     text-decoration: none;
+}
+ul li{
+    list-style-position: inside;
 }
 .project-url:hover{
     color: #EFDA5B;
@@ -257,6 +261,15 @@ section{
     }
     .img-right{
         top: -30px
+    }
+    .proj-tech{
+        margin-bottom: 0px;
+
+    }
+    .proj-skills,
+    .proj-tech{
+        padding-left: 0px;
+        text-align: center;
     }
 }
 /* Footer */
