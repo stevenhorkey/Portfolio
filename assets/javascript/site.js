@@ -47,6 +47,14 @@ var site = {
             url: 'http://verse.games/',
             tech: ['AddThis','Words & Giphy APIs','AOS Scroll','Collaborative Effort in Team setting'],
             skills: ['Bootstrap 4 & CSS','Firebase','HTML','JQuery & JS'],
+        },
+        liri: {
+            name: "Node.js 'Liri' App",
+            img: 'assets/images/liri.jpg',
+            discription: "A command line node.js app which takes in parameters and gives you back data. There are options with twitter, spotify, and OMDB movies. It also writes all commands and results to a text file and has the ability to read commands from other files instead of the command line.",
+            url:'',
+            tech:['Twitter API','Spotify API','OMDB Movies API'],
+            skills:['Node.js','NPM']
         }
     },
     functions : {
@@ -96,11 +104,12 @@ var site = {
 $(document).ready(function(){
     $('.head-content').hide();
     $('.head-content').fadeIn(1200);
-    site.functions.buildProject(site.projects.verse,'left','.proj-1');
-    site.functions.buildProject(site.projects.gifApp,'right','.proj-2');
-    site.functions.buildProject(site.projects.koanGame,'left','.proj-3');
-    site.functions.buildProject(site.projects.lotrGame,'right','.proj-4');
-    site.functions.buildProject(site.projects.hangmanGame,'left','.proj-5');
+    site.functions.buildProject(site.projects.liri,'right','.proj-1');
+    site.functions.buildProject(site.projects.verse,'left','.proj-2');
+    site.functions.buildProject(site.projects.gifApp,'right','.proj-3');
+    site.functions.buildProject(site.projects.koanGame,'left','.proj-4');
+    site.functions.buildProject(site.projects.lotrGame,'right','.proj-5');
+    site.functions.buildProject(site.projects.hangmanGame,'left','.proj-6');
     // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything

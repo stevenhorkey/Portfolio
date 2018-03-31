@@ -75,6 +75,10 @@ section p{
     -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
     clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
 }
+.slant-bottom{
+    -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 95%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 0%, 100% 95%, 0% 100%);
+}
 .page-links{
     margin: 20px 5px;
 }
@@ -270,6 +274,9 @@ ul li{
     .proj-tech{
         padding-left: 0px;
         text-align: center;
+    }
+    .code-links-btm a{
+        margin: 0 20px;
     }
 }
 /* Footer */
