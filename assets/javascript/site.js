@@ -52,7 +52,7 @@ var site = {
             name: "Node.js 'Liri' App",
             img: 'assets/images/liri.jpg',
             discription: "A command line node.js app which takes in parameters and gives you back data. There are options with twitter, spotify, and OMDB movies. It also writes all commands and results to a text file and has the ability to read commands from other files instead of the command line.",
-            url:'',
+            url:'https://github.com/stevenhorkey/liri-node-app',
             tech:['Twitter API','Spotify API','OMDB Movies API'],
             skills:['Node.js','NPM']
         }
