@@ -55,6 +55,14 @@ var site = {
             url:'https://github.com/stevenhorkey/liri-node-app',
             tech:['Twitter API','Spotify API','OMDB Movies API'],
             skills:['Node.js','NPM']
+        },
+        mm: {
+            name: "Meme and Meaning",
+            img: 'assets/images/mmsite.jpg',
+            discription: "A blog, podcast, and YouTube project of mine where I investigate what it takes to live life well and become a better human being. Expresses my interests in personal development, philosophy, science, and psychology.",
+            url:'https://memeandmeaning.com/',
+            tech:['Jekyll','Bootstrap','JQuery','Photoshop'],
+            skills:['Content Creation','Mail Chimp','CSS','HTML']
         }
     },
     functions : {
@@ -104,12 +112,13 @@ var site = {
 $(document).ready(function(){
     $('.head-content').hide();
     $('.head-content').fadeIn(1200);
-    site.functions.buildProject(site.projects.liri,'right','.proj-1');
-    site.functions.buildProject(site.projects.verse,'left','.proj-2');
-    site.functions.buildProject(site.projects.gifApp,'right','.proj-3');
-    site.functions.buildProject(site.projects.koanGame,'left','.proj-4');
-    site.functions.buildProject(site.projects.lotrGame,'right','.proj-5');
-    site.functions.buildProject(site.projects.hangmanGame,'left','.proj-6');
+    site.functions.buildProject(site.projects.mm,'right','.proj-1');
+    site.functions.buildProject(site.projects.liri,'left','.proj-2');
+    site.functions.buildProject(site.projects.verse,'right','.proj-3');
+    site.functions.buildProject(site.projects.gifApp,'left','.proj-4');
+    site.functions.buildProject(site.projects.koanGame,'right','.proj-5');
+    site.functions.buildProject(site.projects.lotrGame,'left','.proj-6');
+    site.functions.buildProject(site.projects.hangmanGame,'right','.proj-7');
     // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
