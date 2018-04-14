@@ -54,7 +54,7 @@ var site = {
             discription: "A command line node.js app which takes in parameters and gives you back data. There are options with twitter, spotify, and OMDB movies. It also writes all commands and results to a text file and has the ability to read commands from other files instead of the command line.",
             url:'https://github.com/stevenhorkey/liri-node-app',
             tech:['Twitter API','Spotify API','OMDB Movies API'],
-            skills:['Node.js','NPM']
+            skills:['Node.js','npm']
         },
         mm: {
             name: "Meme and Meaning",
@@ -63,6 +63,14 @@ var site = {
             url:'https://memeandmeaning.com/',
             tech:['Jekyll','Bootstrap','JQuery','Photoshop'],
             skills:['Content Creation','Mail Chimp','CSS','HTML']
+        },
+        bamazon: {
+            name: "Bamazon Store Front",
+            img: 'assets/images/bamazon.jpg',
+            discription: "A functional example of a command line e-commerce store. It allows managers to add items to inventory, check items with low inventory, add new products, and view current products. It allows supervisors to view product sales by department and allows customers to buy products in the database.",
+            url:'https://github.com/stevenhorkey/Amazon-Store-Front-w-Node.js-MySql',
+            tech:['MySQL','Node.js'],
+            skills:['JavaScript','npm inquirer']
         }
     },
     functions : {
@@ -113,12 +121,12 @@ $(document).ready(function(){
     $('.head-content').hide();
     $('.head-content').fadeIn(1200);
     site.functions.buildProject(site.projects.mm,'right','.proj-1');
-    site.functions.buildProject(site.projects.liri,'left','.proj-2');
-    site.functions.buildProject(site.projects.verse,'right','.proj-3');
-    site.functions.buildProject(site.projects.gifApp,'left','.proj-4');
-    site.functions.buildProject(site.projects.koanGame,'right','.proj-5');
-    site.functions.buildProject(site.projects.lotrGame,'left','.proj-6');
-    site.functions.buildProject(site.projects.hangmanGame,'right','.proj-7');
+    site.functions.buildProject(site.projects.bamazon,'left','.proj-2');
+    site.functions.buildProject(site.projects.liri,'right','.proj-3');
+    site.functions.buildProject(site.projects.verse,'left','.proj-4');
+    site.functions.buildProject(site.projects.gifApp,'right','.proj-5');
+    site.functions.buildProject(site.projects.koanGame,'left','.proj-6');
+    site.functions.buildProject(site.projects.lotrGame,'right','.proj-7');
     // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
