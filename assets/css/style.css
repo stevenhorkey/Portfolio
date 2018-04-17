@@ -144,7 +144,11 @@ section{
     text-align: justify;
     position: relative;
 }
-
+.languages{
+    text-align: left;
+    width: 50%;
+    padding-left: 14%;
+}
 .clearfix::after {
     content: "";
     clear: both;
