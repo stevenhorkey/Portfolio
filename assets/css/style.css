@@ -146,8 +146,10 @@ section{
 }
 .languages{
     text-align: left;
-    width: 50%;
+    padding: 10px 0 0 50px;
+    /* width: 50%;
     padding-left: 14%;
+     */
 }
 .clearfix::after {
     content: "";
@@ -160,13 +162,8 @@ section{
         top: 27%;
         
     }
-
-}
-@media screen and (max-width: 767px){
-    .devi-icons{
-        margin-bottom: 30px;
-        top: 5%;
-        
+    .languages{
+        display: none;
     }
 
 }
@@ -176,8 +173,8 @@ section{
         top: 5%;
         
     }
-
 }
+
 /* Portfolio */
 .portfolio{
     height: fit-content;
