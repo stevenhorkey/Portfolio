@@ -112,6 +112,9 @@ section{
 .about{
     color: white;
 }
+.education>ul{
+    padding: 0;
+}
 .pride{
     text-align: center;
     font-style: italic;
@@ -172,6 +175,9 @@ section{
         margin-bottom: 30px;
         top: 5%;
         
+    }
+    .education{
+        margin: 30px 0 50px;
     }
 }
 
