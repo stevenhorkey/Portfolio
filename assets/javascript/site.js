@@ -71,7 +71,16 @@ var site = {
             url:'https://github.com/stevenhorkey/Amazon-Store-Front-w-Node.js-MySql',
             tech:['MySQL','Node.js'],
             skills:['JavaScript','npm inquirer']
+        },
+        friendFinder: {
+            name: "Friend Finder App",
+            img: 'assets/images/friend-finder.jpg',
+            discription: "A fully deployed front-end and back-end app that allows users to answer and submit a survey that is then compared to other users so that they may find their perfect friend...",
+            url:'https://quiet-forest-18242.herokuapp.com/',
+            tech:['Heroku','Node.js','Bootstrap 4'],
+            skills:['Express.js','HTML','JQuery']
         }
+
     },
     functions : {
         buildProject : function(pLabel, imgLayout, projClass){
@@ -121,12 +130,13 @@ $(document).ready(function(){
     $('.head-content').hide();
     $('.head-content').fadeIn(1200);
     site.functions.buildProject(site.projects.mm,'right','.proj-1');
-    site.functions.buildProject(site.projects.bamazon,'left','.proj-2');
-    site.functions.buildProject(site.projects.liri,'right','.proj-3');
-    site.functions.buildProject(site.projects.verse,'left','.proj-4');
-    site.functions.buildProject(site.projects.gifApp,'right','.proj-5');
-    site.functions.buildProject(site.projects.koanGame,'left','.proj-6');
-    site.functions.buildProject(site.projects.lotrGame,'right','.proj-7');
+    site.functions.buildProject(site.projects.friendFinder,'left','.proj-2');
+    site.functions.buildProject(site.projects.bamazon,'right','.proj-3');
+    site.functions.buildProject(site.projects.liri,'left','.proj-4');
+    site.functions.buildProject(site.projects.verse,'right','.proj-5');
+    site.functions.buildProject(site.projects.gifApp,'left','.proj-6');
+    site.functions.buildProject(site.projects.koanGame,'right','.proj-7');
+    site.functions.buildProject(site.projects.lotrGame,'left','.proj-8');
     // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
