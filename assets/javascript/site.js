@@ -75,7 +75,7 @@ var site = {
         friendFinder: {
             name: "Friend Finder App",
             img: 'assets/images/friend-finder.jpg',
-            discription: "A fully deployed front-end and back-end app that allows users to answer and submit a survey that is then compared to other users so that they may find their perfect friend...",
+            discription: "A fully deployed, full-stack app that allows users to answer and submit a survey to find like-minded friends.",
             url:'https://quiet-forest-18242.herokuapp.com/',
             tech:['Heroku','Node.js','Bootstrap 4'],
             skills:['Express.js','HTML','JQuery']
