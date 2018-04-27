@@ -79,6 +79,14 @@ var site = {
             url:'https://quiet-forest-18242.herokuapp.com/',
             tech:['Heroku','Node.js','Bootstrap 4'],
             skills:['Express.js','HTML','JQuery']
+        },
+        pythonRPG:{
+            name: "Python RPG Game",
+            img: 'assets/images/python-rpg.jpg',
+            discription: "A simple rpg game built using python. It enables the user to choose their fighter's name and their opponent's name before they duke it out in the command line.",
+            url:'https://github.com/stevenhorkey/python-rpg',
+            tech:[],
+            skills:[]
         }
 
     },
@@ -137,6 +145,7 @@ $(document).ready(function(){
     site.functions.buildProject(site.projects.gifApp,'left','.proj-6');
     site.functions.buildProject(site.projects.koanGame,'right','.proj-7');
     site.functions.buildProject(site.projects.lotrGame,'left','.proj-8');
+    site.functions.buildProject(site.projects.pythonRPG,'right','.proj-9');
     // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
