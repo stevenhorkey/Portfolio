@@ -87,6 +87,14 @@ var site = {
             url:'https://github.com/stevenhorkey/python-rpg',
             tech:[],
             skills:[]
+        },
+        burgerish:{
+            name: "Burgerish!",
+            img: 'assets/images/burgerish.jpg',
+            discription: "",
+            url:'https://github.com/stevenhorkey/burger',
+            tech:['MySQL','Node.js','Express','MVC'],
+            skills:['Handlebars','Heroku','Bootstrap','JavaScript']
         }
 
     },
@@ -138,14 +146,15 @@ $(document).ready(function(){
     $('.head-content').hide();
     $('.head-content').fadeIn(1200);
     site.functions.buildProject(site.projects.mm,'right','.proj-1');
-    site.functions.buildProject(site.projects.friendFinder,'left','.proj-2');
-    site.functions.buildProject(site.projects.bamazon,'right','.proj-3');
-    site.functions.buildProject(site.projects.liri,'left','.proj-4');
-    site.functions.buildProject(site.projects.verse,'right','.proj-5');
-    site.functions.buildProject(site.projects.gifApp,'left','.proj-6');
-    site.functions.buildProject(site.projects.koanGame,'right','.proj-7');
-    site.functions.buildProject(site.projects.lotrGame,'left','.proj-8');
-    site.functions.buildProject(site.projects.pythonRPG,'right','.proj-9');
+    site.functions.buildProject(site.projects.burgerish,'left','.proj-2');
+    site.functions.buildProject(site.projects.friendFinder,'right','.proj-3');
+    site.functions.buildProject(site.projects.bamazon,'left','.proj-4');
+    site.functions.buildProject(site.projects.liri,'right','.proj-5');
+    site.functions.buildProject(site.projects.verse,'left','.proj-6');
+    site.functions.buildProject(site.projects.gifApp,'right','.proj-7');
+    site.functions.buildProject(site.projects.koanGame,'left','.proj-8');
+    site.functions.buildProject(site.projects.lotrGame,'right','.proj-9');
+    site.functions.buildProject(site.projects.pythonRPG,'left','.proj-10');
     // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
