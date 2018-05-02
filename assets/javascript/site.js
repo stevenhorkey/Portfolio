@@ -91,10 +91,10 @@ var site = {
         burgerish:{
             name: "Burgerish!",
             img: 'assets/images/burgerish.jpg',
-            discription: "",
+            discription: "Burgerish is a full-stack logging app utilizing a RESTful API, MySQL on the back end, handlebars on the front end, and Node.js mediating between the two.",
             url:'https://github.com/stevenhorkey/burger',
             tech:['MySQL','Node.js','Express','MVC'],
-            skills:['Handlebars','Heroku','Bootstrap','JavaScript']
+            skills:['Handlebars','Heroku','Bootstrap','RESTful API']
         }
 
     },
