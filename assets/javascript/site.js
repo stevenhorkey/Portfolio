@@ -5,6 +5,7 @@ var site = {
             img: 'assets/images/gifapp.jpg',
             discription: 'GifTastic is a JQuery based web application which utilizes the Giphy API. The user is able to enter a topic and the amount of gifs they want generated. A button is then dynamically created and once it is clicked...Presto! The gifs are displayed. ',
             url: 'https://stevenhorkey.github.io/GifTastic/',
+            gitUrl: 'https://github.com/stevenhorkey/GifTastic',
             tech: ['Giphy API','JQuery','CSS'],
             skills: ['HTML','Bootstrap','Javascript'],
         },
@@ -13,6 +14,7 @@ var site = {
             img: 'assets/images/zen.jpg',
             discription: 'What is the sound of one hand clapping? Koans are esoteric riddles that defy logical thinking and that is certainly the case in this JQuery based game. There are 15 questions, each with four possible answers. Think you get get em\' all right?',
             url: 'https://stevenhorkey.github.io/TriviaGame/',
+            gitUrl: 'https://github.com/stevenhorkey/TriviaGame',
             tech: ['HTML','CSS','Javascript'],
             skills: ['Bootstrap','JQuery UI'],
         },
@@ -20,7 +22,8 @@ var site = {
             name: "Lord of the Rings PRG",
             img: 'assets/images/lotr.jpg',
             discription: 'Gandalf\'s dilema is a JQuery based Lord of the Rings RPG game where you play as either Smeagol, the Balrog, Sauron, or Gandalf himself. Each time you attack, you also endure some damage, but your power grows evermore. You may win, you may loose, or you all may die in the process. Which will it be?',
-            url: 'https://stevenhorkey.github.io/week-4-game/',
+            url: 'https://stevenhorkey.github.io/lotr-rpg/',
+            gitUrl: 'https://github.com/stevenhorkey/lotr-rpg',
             tech: ['HTML','CSS'],
             skills: ['Bootstrap','Javascript'],
         },
@@ -29,6 +32,7 @@ var site = {
             img: "assets/images/hangman.jpg",
             discription: "Play a sixties themed hangman game and guess some of the best bands of the era. Pink Floyd, Jimi Hendrix, and The Beatles are included among many others. The song played during the game is a cover by non other than your's truly.",
             url: 'https://stevenhorkey.github.io/Hangman-Game/',
+            gitUrl: 'https://github.com/stevenhorkey/Hangman-Game',
             tech: ['HTML','CSS'],
             skills: ['Bootstrap','Javascript'],
         },
@@ -37,6 +41,7 @@ var site = {
             img: "assets/images/rps.jpg",
             discription: "A multiplayer rock paper scissors game that uses firebase to store and update data across machines. Showcases an initial step toward developing appliactions on both the front and back end.",
             url: 'https://stevenhorkey.github.io/RPS-Multiplayer/',
+            gitUrl: 'https://github.com/stevenhorkey/RPS-Multiplayer',
             tech: ['Giphy API','JQuery','CSS'],
             skills: ['HTML','Bootstrap','Javascript'],
         },
@@ -45,6 +50,7 @@ var site = {
             img: "assets/images/verse.jpg",
             discription: "A fully functional, two-player rap battle game that integrates a slick, repsonsive design, social sharing, multiple api's and numerous libraries",
             url: 'http://verse.games/',
+            gitUrl: 'https://github.com/stevenhorkey/Verse',
             tech: ['AddThis','Words & Giphy APIs','AOS Scroll','Collaborative Effort in Team setting'],
             skills: ['Bootstrap 4 & CSS','Firebase','HTML','JQuery & JS'],
         },
@@ -77,6 +83,7 @@ var site = {
             img: 'assets/images/friend-finder.jpg',
             discription: "A fully deployed, full-stack app that allows users to answer and submit a survey to find like-minded friends.",
             url:'https://quiet-forest-18242.herokuapp.com/',
+            gitUrl: 'https://github.com/stevenhorkey/friend-finder',
             tech:['Heroku','Node.js','Bootstrap 4'],
             skills:['Express.js','HTML','JQuery']
         },
@@ -84,7 +91,7 @@ var site = {
             name: "Python RPG Game",
             img: 'assets/images/python-rpg.jpg',
             discription: "A simple rpg game built using python. It enables the user to choose their fighter's name and their opponent's name before they duke it out in the command line.",
-            url:'https://github.com/stevenhorkey/python-rpg',
+            gitUrl: 'https://github.com/stevenhorkey/python-rpg',
             tech:[],
             skills:[]
         },
@@ -93,6 +100,7 @@ var site = {
             img: 'assets/images/burgerish.jpg',
             discription: "Burgerish is a full-stack logging app utilizing a RESTful API, MySQL on the back end, handlebars on the front end, and Node.js mediating between the two.",
             url:'https://github.com/stevenhorkey/burger',
+            gitUrl: 'https://github.com/stevenhorkey/burger',
             tech:['MySQL','Node.js','Express','MVC'],
             skills:['Handlebars','Heroku','Bootstrap','RESTful API']
         }
@@ -121,10 +129,16 @@ var site = {
                 var point = $('<li></li>').text(pLabel.skills[i]);
                 skills.append(point);
             }
-            var checkUrl = $('<a>').attr('href',pLabel.url).attr('target','_blank');
-            checkUrl.addClass('project-url row').text("Check it out here")
+            if('url' in pLabel){
+                var checkUrl = $('<a>').attr('href',pLabel.url).attr('target','_blank');
+                checkUrl.addClass('project-url row').text("Check it out here");
+            };
+            if('gitUrl' in pLabel){
+                var gitUrl = $('<a>').attr('href',pLabel.gitUrl).attr('target','_blank');
+                gitUrl.addClass('git-url row').html("<i class='fab fa-git-square'></i>");
+            };
             var lists = $('<div></div>').addClass('row').append(tech).append(skills)
-            text.append(title).append(description).append(lists).append(checkUrl);
+            text.append(title).append(description).append(lists).append(checkUrl).append(gitUrl);
             if (imgLayout === 'right'){
                 image.addClass('img-right');
                 project.append(text).append(image); 

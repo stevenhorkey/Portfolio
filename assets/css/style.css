@@ -233,6 +233,17 @@ section{
     -webkit-transition:  all .2s;
     transition: all .2s;
     text-decoration: none;
+    display: inline-block;
+}
+.git-url{
+    display: inline-block;
+    width: 60px;
+    font-size: 40px;
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 9px;
 }
 ul li{
     list-style-position: inside;
