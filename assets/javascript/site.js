@@ -103,6 +103,15 @@ var site = {
             gitUrl: 'https://github.com/stevenhorkey/burger',
             tech:['MySQL','Node.js','Express','MVC'],
             skills:['Handlebars','Heroku','Bootstrap','RESTful API']
+        },
+        goalPost:{
+            name: "goalPost",
+            img: 'assets/images/goalPost.jpg',
+            discription: "A goal-based social media platform where users can post, read, edit, and delete goals. Sign up or sign in, follow other members, view their progress, and make positive connections! ",
+            url:'https://obscure-escarpment-15577.herokuapp.com/auth',
+            gitUrl: 'https://github.com/stevenhorkey/project-two',
+            tech:['MySQL','Node.js','Express','MVC', 'Passport.js','JavaScript'],
+            skills:['Sequelize','Handlebars','Heroku','Bootstrap','RESTful API','JQuery']
         }
 
     },
@@ -160,15 +169,16 @@ $(document).ready(function(){
     $('.head-content').hide();
     $('.head-content').fadeIn(1200);
     site.functions.buildProject(site.projects.mm,'right','.proj-1');
-    site.functions.buildProject(site.projects.burgerish,'left','.proj-2');
-    site.functions.buildProject(site.projects.friendFinder,'right','.proj-3');
-    site.functions.buildProject(site.projects.bamazon,'left','.proj-4');
-    site.functions.buildProject(site.projects.liri,'right','.proj-5');
-    site.functions.buildProject(site.projects.verse,'left','.proj-6');
-    site.functions.buildProject(site.projects.gifApp,'right','.proj-7');
-    site.functions.buildProject(site.projects.koanGame,'left','.proj-8');
-    site.functions.buildProject(site.projects.lotrGame,'right','.proj-9');
-    site.functions.buildProject(site.projects.pythonRPG,'left','.proj-10');
+    site.functions.buildProject(site.projects.goalPost,'left','.proj-2');
+    site.functions.buildProject(site.projects.burgerish,'right','.proj-3');
+    site.functions.buildProject(site.projects.friendFinder,'left','.proj-4');
+    site.functions.buildProject(site.projects.bamazon,'right','.proj-5');
+    site.functions.buildProject(site.projects.liri,'left','.proj-6');
+    site.functions.buildProject(site.projects.verse,'right','.proj-7');
+    site.functions.buildProject(site.projects.gifApp,'left','.proj-8');
+    site.functions.buildProject(site.projects.koanGame,'right','.proj-9');
+    site.functions.buildProject(site.projects.lotrGame,'left','.proj-10');
+    site.functions.buildProject(site.projects.pythonRPG,'right','.proj-11');
     // Select all links with hashes
     $('a[href*="#"]')
     // Remove links that don't actually link to anything
