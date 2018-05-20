@@ -141,6 +141,9 @@ section{
     position: relative;
     bottom: 10px;
 }
+.list-none{
+    list-style: none;
+}
 .about-content{
     position: relative;
     float: right;
