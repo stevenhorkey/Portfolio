@@ -1,0 +1,75 @@
+*{
+  -webkit-transition: all 100ms ease;
+  -moz-transition: all 100ms ease;
+  -ms-transition: all 100ms ease;
+  -o-transition: all 100ms ease;
+  transition: all 100ms ease;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
+  background-color: #4f5357;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen-2.png");
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+}
+a{
+  color: white;
+}
+a:hover{
+  color: #EFDA5B;
+  text-decoration: none;
+}
+.fab{
+  font-size: 28px;
+  margin: 30px;
+}
+.pl-7{
+  padding-left: 7rem!important;
+}
+.font-ezcar{
+  font-family: 'Eczar', serif !important;
+}
+.font-ubuntu{
+  font-family: 'Ubuntu', sans-serif !important;
+}
+.font-monospace{
+  font-family: monospace;
+}
+.bg-dark{
+  background-color: #000000 !important;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen-2.png");
+}
+.slant{
+  -webkit-clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 5%, 100% 95%, 0% 100%);
+}
+.link{
+  font-size: 18px;
+  color: white;
+  padding: 4px 6px 6px 6px;
+  border: white 1px solid;
+  border-radius: 12px;
+  line-break: 1em;
+  -webkit-transition:  all .2s; /* Safari */
+  transition: all .2s;  
+}
+.link:hover{
+  color: #EFDA5B;
+  text-decoration: none;
+  border: #EFDA5B 1px solid;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width: 992px){
+  .skills{
+    padding: 0 !important;
+    list-style: none;
+  }
+}
+@media only screen and (max-width: 768px){
+  .skills{
+    text-align: center;
+  }
+}
