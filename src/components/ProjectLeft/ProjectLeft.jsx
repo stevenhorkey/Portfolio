@@ -5,7 +5,7 @@ class ProjectLeft extends Component{
     render(){
 
         return(
-            <section className='clearfix py-5 text-center' id={this.props.name}>
+            <section className='clearfix py-5 text-center' key={this.props.id} id={this.props.name}>
                 <div className="container">
                     <div data-aos="fade-right" data-aos-offset="200">
                         <div className='row h-100 justify-content-center align-items-center'>
@@ -26,7 +26,7 @@ class ProjectLeft extends Component{
                                 </div>
                                 <a className='link' href={this.props.url} target="_blank">Check it out here</a>
                             </div>
-                            <img className='col-md-6 float-right my-4' src={this.props.image}/>
+                            <img alt={this.props.name} className='col-md-6 float-right my-4' src={this.props.image}/>
                         </div>
                     </div>
                 </div>

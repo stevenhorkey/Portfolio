@@ -5,11 +5,11 @@ class ProjectRight extends Component{
     render(){
 
         return(
-            <section className='clearfix py-5 text-center bg-dark slant' id={this.props.name}>
+            <section className='clearfix py-5 text-center bg-dark slant' key={this.props.id} id={this.props.name}>
                 <div className="container">
                     <div data-aos="fade-left" data-aos-offset="200">
                         <div className='row h-100 justify-content-center align-items-center'>
-                            <img className='col-md-6 float-left my-4' src={this.props.image}/>
+                            <img alt={this.props.name} className='col-md-6 float-left my-4' src={this.props.image}/>
                             <div className="col-md-6 float-right">
                                 <h2>{this.props.name}</h2>
                                 <p className="text-justify">{this.props.description}</p>

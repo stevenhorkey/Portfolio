@@ -25,7 +25,7 @@ class Header extends Component{
             <header className="head vh-102 text-white">
                 <div className="row vh-102 justify-content-center align-items-center">
                     <div className="head-content text-center mx-auto col">
-                        <img src={HeadShot} className="steven-headshot"/>
+                        <img alt='Steven Horkey' src={HeadShot} className="steven-headshot"/>
                         <h1 style={style.name} className="font-ezcar">Steven Horkey</h1>
                         <p style={style.label} className="font-ezcar">Full Stack Web Developer</p>
                         <a href="mailto:stevedevtech@gmail.com" className="link font-monospace my-4">stevedevtech@gmail.com</a>

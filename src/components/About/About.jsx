@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './About.css';
 
-import jekyll from '../assets/images/jekyll.png';
+// import jekyll from '../assets/images/jekyll.png';
 
 class About extends Component{
     render(){
