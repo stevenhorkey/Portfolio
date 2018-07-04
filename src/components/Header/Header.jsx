@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Header.css';
 import $ from 'jquery';
-import HeadShot from '../assets/images/steven1.jpg';
+import HeadShot from '../../assets/images/steven1.jpg';
 
-import resume from '../assets/resume/steven-horkey-resume.pdf';
+import resume from '../../assets/resume/steven-horkey-resume.pdf';
 
 const style = {
     name: {

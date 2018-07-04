@@ -37,6 +37,9 @@ class Portfolio extends Component {
 
                 <div id='portfolio'>
                     {sortedProjects.map((element, id) => {
+                        if(element.position === null){
+                            return(null);
+                        }
                         if(element.position % 2 === 0){
                             return(
                                 <ProjectRight
