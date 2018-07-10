@@ -28,7 +28,7 @@ class Header extends Component{
                         <img alt='Steven Horkey' src={HeadShot} className="steven-headshot"/>
                         <h1 style={style.name} className="font-ezcar">Steven Horkey</h1>
                         <p style={style.label} className="font-ezcar">Full Stack Web Developer</p>
-                        <a href="mailto:stevedevtech@gmail.com" className="link font-monospace my-4">stevedevtech@gmail.com</a>
+                        <a href="mailto:code@stevenhorkey.com" className="link font-monospace my-4">code@stevenhorkey.com</a>
                         <br/>
                         <div className="font-ubuntu page-links">
                             <a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href={resume} download>Resume</a> | <a href="#contact">Contact</a> 

@@ -13,7 +13,7 @@ class Footer extends Component{
                                 <h2 className='text-center'>Contact</h2>
                                 <p className='text-justify mb-4'>Have a project you need help on? Feel free to contact me and we'll see if we can work something out. Thanks!</p>
                                 <div className='text-center'>
-                                    <a href="mailto:stevedevtech@gmail.com" className="mx-auto link">stevedevtech@gmail.com</a>
+                                    <a href="mailto:code@stevenhorkey.com" className="mx-auto link">code@stevenhorkey.com</a>
                                     <div className="">
                                         <a href="https://github.com/stevenhorkey"><i className="fab fa-github"></i></a>
                                         <a href="https://stackoverflow.com/users/9443856/stevedevtech"><i className="fab fa-stack-overflow"></i></a>
