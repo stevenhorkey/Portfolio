@@ -12,6 +12,7 @@ import audivity from './assets/images/audivity.jpg';
 import treesplease from './assets/images/treesplease.jpg';
 import data7 from './assets/images/data7.jpg';
 import portfolio from './assets/images/portfolio.jpg';
+import taproot from './assets/images/taproot.png';
 
 const projects = [
     {
@@ -21,7 +22,7 @@ const projects = [
         url:'https://memeandmeaning.com',
         image:mmImg,
         git:'',
-        position:1
+        position:4
     },
     {
         name:'Development & Operations Intern\nAudivity',
@@ -39,7 +40,7 @@ const projects = [
         url:'https://datascience.arizona.edu/',
         image:data7,
         git:'',
-        position:3
+        position:1
     },
     {
         name:'Web Development Intern\nTrees Please Community Garden',
@@ -48,7 +49,7 @@ const projects = [
         url:'https://stevenhorkey.github.io/aztreesplease/',
         image:treesplease,
         git:'https://github.com/stevenhorkey/aztreesplease',
-        position:4
+        position:5
     },
     {
         name: "goalPost",
@@ -66,7 +67,7 @@ const projects = [
         url:'https://stevenhorkey.com',
         git:'https://github.com/stevenhorkey/Portfolio',
         skills:['React', 'AWS EC2', 'NGINX', 'Drift', 'AOS Scroll Library', 'Bootstrap 4'],
-        position:5
+        position:7
     },
     {
         name:"Mongo DB Scraper",
@@ -75,7 +76,7 @@ const projects = [
         url:'https://shrouded-sea-11223.herokuapp.com/',
         git:'https://github.com/stevenhorkey/mongo-scraper',
         skills:['Mongo DB','Node.js','Express', 'JQuery','Mongoose JS','Cheerio JS','RESTful API','Bootstrap 4'],
-        position:7
+        position:8
     },
     {
         name:"Burgerish!",
@@ -93,7 +94,7 @@ const projects = [
         url:'https://quiet-forest-18242.herokuapp.com/',
         git:'https://github.com/stevenhorkey/friend-finder',
         skills:['Heroku','Node.js','Bootstrap 4','Express.js','HTML','JQuery'],
-        position:8
+        position:9
     },
     {
         name:"Bamazon Store Front",
@@ -101,7 +102,7 @@ const projects = [
         description:"A functional example of a command line e-commerce store. It allows managers to add items to inventory check items with low inventory add new products and view current products. It allows supervisors to view product sales by department and allows customers to buy products in the database.",
         url:'https://github.com/stevenhorkey/Amazon-Store-Front-w-Node.js-MySql',
         skills:['MySQL','Node.js','JavaScript','npm inquirer'],
-        position:9
+        position:10
     },
     {
         name:"Node.js 'Liri' App",
@@ -109,7 +110,7 @@ const projects = [
         description:"A command line node.js app which takes in parameters and gives you back data. There are options with twitter spotify and OMDB movies. It also writes all commands and results to a text file and has the ability to read commands from other files instead of the command line.",
         url:'https://github.com/stevenhorkey/liri-node-app',
         skills:['Node.js','npm','Twitter API','Spotify API','OMDB Movies API'],
-        position:10
+        position:11
     },
     {
         name:"Verse",
@@ -127,7 +128,16 @@ const projects = [
         url:'https://stevenhorkey.github.io/GifTastic/',
         git:'https://github.com/stevenhorkey/GifTastic',
         skills:['HTML','Bootstrap','Javascript','Giphy API','JQuery','CSS'],
-        position:11
+        position:null
+    },
+    {
+        name:"TapRoot",
+        image:taproot,
+        description:'One of the problems that keeps average people from visiting farmers markets is the fact that they simply don\'t know what is there. TapRoot solves that. It is an online network of vendors and market organizers who post their information, products, and passion online so that users like you and I can view it before we go to the market so that we can shop with confidence as we connect to the source of our food. ',
+        url:'https://taproot.market',
+        git:'https://github.com/stevenhorkey/GifTastic',
+        skills:['Deployed on AWS EC2','Bootstrap 4','Node','Express','MySQL','React', 'React Reveal', 'Passport JS'],
+        position: 3
     }
 ]
 

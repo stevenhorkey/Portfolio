@@ -24,9 +24,19 @@ class ProjectLeft extends Component{
                                         })}
                                     </div>
                                 </div>
-                                <a className='link' href={this.props.url} target="_blank">Check it out here</a>
+                                <span className=''>
+                                    <a className='link' href={this.props.url} target="_blank">Check it out here</a>
+                                    {(this.props.git !== '') ? 
+                                        
+                                        <a className='' href={this.props.git} target="_blank"><i class="fab fa-git-square"></i></a>
+                                    :
+                                        null
+                                    }
+                                </span>
                             </div>
-                            <img alt={this.props.name} className='col-md-6 float-right my-4' src={this.props.image}/>
+                            <a href={this.props.url} className='d-contents'>
+                                <img alt={this.props.name} className='col-md-6 float-right my-4 proj-img' src={this.props.image}/>
+                            </a>
                         </div>
                     </div>
                 </div>

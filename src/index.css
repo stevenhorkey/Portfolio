@@ -22,6 +22,9 @@ a:hover{
   color: #EFDA5B;
   text-decoration: none;
 }
+.d-contents{
+  display: contents !important;
+}
 .fab{
   font-size: 28px;
   margin: 30px;
@@ -61,6 +64,22 @@ a:hover{
   text-decoration: none;
   border: #EFDA5B 1px solid;
   background-color: rgba(0, 0, 0, 0.3);
+}
+.fa-git-square{
+  font-size: 32px;
+  position: relative;
+  top: 6px;
+  color: white;
+  line-break: 1em;
+  -webkit-transition:  all .2s; /* Safari */
+  transition: all .2s;  
+}
+.fa-git-square:hover{
+  color: #EFDA5B;
+  text-decoration: none;
+}
+.proj-img:hover{
+  transform: scale(1.02);
 }
 @media only screen and (max-width: 992px){
   .skills{
