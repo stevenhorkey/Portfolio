@@ -46,7 +46,7 @@ const projects = [
         name:'Web Development Intern\nTrees Please Community Garden',
         description:'I have recently been putting together a brand new site for Trees Please, a non-profit environmental organization here in Tucson. Currently I am adding the entire back-end with user authentication to what was originally a static site that I made with React JS and github pages. The site is scheduled to be launched in August 2018.',
         skills:['React', 'AWS EC2', 'NGINX', 'CSS', 'HTML'],
-        url:'https://stevenhorkey.github.io/aztreesplease/',
+        url:'https://treesplease.space',
         image:treesplease,
         git:'https://github.com/stevenhorkey/aztreesplease',
         position:5
