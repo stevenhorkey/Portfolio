@@ -28,7 +28,13 @@ class ProjectRight extends Component{
                                     </div>
                                 </div>
                                 <span>
-                                    <a className='link' href={this.props.url} target="_blank">Check it out here</a>
+                                    {/* <a className='link' href={this.props.url} target="_blank">Check it out here</a> */}
+                                    {(this.props.url !== '') ? 
+                                        
+                                        <a className='link' href={this.props.url} target="_blank">Check it out here</a>
+                                    :
+                                        null
+                                    }
                                     {(this.props.git !== '') ? 
                                         
                                         <a className='pt-2' href={this.props.git} target="_blank"><i class="fab fa-git-square"></i></a>
