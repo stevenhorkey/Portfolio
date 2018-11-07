@@ -19,11 +19,11 @@ const projects = [
     {
         name:'Meme and Meaning',
         description:'A blog, podcast, and YouTube project of mine where I investigate what it takes to live life well and become a better human being. Expresses my interests in personal development, philosophy, science, spirituality, and psychology.',
-        skills:['Jekyll', 'Bootstrap', 'JQuery', 'Adobe Photoshop', 'Content Creation', 'Mail Chimp', 'CSS', 'HTML'],
+        skills:['React', 'Bootstrap', 'Restful API', 'Adobe Photoshop', 'WP API', 'Mail Chimp', 'CSS', 'HTML'],
         url:'https://memeandmeaning.com',
         image:mmImg,
         git:'',
-        position:null
+        position:7
     },
     {
         name:'Development & Operations Intern\nAudivity',
@@ -56,7 +56,7 @@ const projects = [
         name:'Freelance Web Developer',
         description:'As of now, I am in a long-term contract position with a media and property non-profit here in Southern Arizona. I am working on multiple sites with a heavy focus on PHP and MySQL.',
         skills:['React', 'PHP', 'MySQL', 'JavaScript', 'CSS', 'HTML'],
-        url: '',
+        url: 'http://theseaofglass.org/rentals',
         image: gcca,
         git: '',
         position:1
@@ -68,7 +68,7 @@ const projects = [
         url:'https://obscure-escarpment-15577.herokuapp.com/auth',
         git:'https://github.com/stevenhorkey/project-two',
         skills:['MySQL','Node.js','Express','MVC', 'Passport.js','JavaScript','Sequelize','Handlebars','Heroku','Bootstrap','RESTful API','JQuery'],
-        position:7
+        position:null
     },
     {
         name:"stevenhorkey.com",

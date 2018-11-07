@@ -13,11 +13,11 @@ class About extends Component{
                             <div>
                                 <h2 className='text-center'>Education</h2>
                                 <ul>
-                                    <li>University of Arizona &bull; 2016 - 2020 &bull; Cognitive & Computer Science &bull; 3.4 GPA</li>
+                                    <li>University of Arizona &bull; 2016 - 2020 &bull; BS Cognitive Science &bull; Computer Science Minor</li>
                                     <br/>
-                                    <li>University of Arizona Full Stack Flex Program &bull; Present - July 2018</li>
+                                    <li>University of Arizona Full Stack Flex Program &bull; January 2018 - July 2018</li>
                                     <br/>                            
-                                    <li>Sahuaro High School &bull; 2016 &bull; Top 5% of my className &bull; 4.0 GPA</li>
+                                    <li>Sahuaro High School &bull; 2016 &bull; Top 5% of Graduating Class &bull; 4.0 GPA</li>
                                 </ul>
 
                             </div>

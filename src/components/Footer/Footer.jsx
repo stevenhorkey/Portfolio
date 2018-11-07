@@ -26,7 +26,7 @@ class Footer extends Component{
                         <div className="col-md-6">
                             <div>
                                 <h2 className='text-center'>More About Me</h2>
-                                <p className='text-justify'>My interests are wide ranging and I like to think I take a holistic approach to life. I am particularly interested in fields like philosophy, meditation, and psychology as well as anything related to music and health. When I'm not coding or doing school work, I am either reading, writing, playing guitar, or out on a trail. I am also a radical animal lover :)</p>
+                                <p className='text-justify'>My interests are wide ranging and I like to think I take a holistic approach to life. I am particularly interested in fields like philosophy, meditation, and psychology as well as anything related to music and health. When I'm not coding or doing school work, I am either reading, creating music, or out on a trail. I am also a radical animal lover :)</p>
                             </div>
                         </div>
                     </div>
