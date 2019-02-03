@@ -46,7 +46,7 @@ class Project extends Component{
                                     {(!this.props.media.endsWith('.mp4')) ? 
                                         <img alt={this.props.name} className='' src={this.props.media}/>
                                     :
-                                        <video width="100%" height="100%" autoPlay="true" loop="true" className="">
+                                        <video width="100%" height="100%" muted="true" autoPlay="true" loop="true" className="">
                                             <source src={this.props.media} type="video/mp4"/>
                                             <source src="movie.ogg" type="video/ogg"/>
                                             Your browser does not support the video tag.
