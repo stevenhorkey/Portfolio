@@ -9,7 +9,7 @@ class Project extends Component{
                 <div className="container">
                     <div data-aos="fade-right" data-aos-offset="200">
                         <div className='row h-100 justify-content-center align-items-center'>
-                            <div className={(this.props.position % 2 === 0) ? 'col-md-6 float-left order-first' : 'col-md-6 float-left order-last'}>
+                            <div className={(this.props.id % 2 === 0) ? 'col-md-6 float-left order-first' : 'col-md-6 float-left order-last'}>
                                 <h2>{this.props.name}</h2>
                                 <p className="text-justify">{this.props.description}</p>
                                 <div className="row text-center skills mb-4">
