@@ -7,17 +7,24 @@ import 'aos/dist/aos.css';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import _ from 'underscore';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
-import ProjectLeft from './components/ProjectLeft/ProjectLeft';
-import ProjectRight from './components/ProjectRight/ProjectRight';
+import Project from './components/Project/Project';
+// import ProjectRight from './components/ProjectRight/ProjectRight';
 
 import projects from './projects';
 
-let sortedProjects = _.sortBy(projects, 'position');
+let filteredProjects = [];
+projects.forEach(project => {
+    if(project.position !== null){
+        filteredProjects.push(project);
+    }
+})
+
+let sortedProjects = _.sortBy(filteredProjects, 'position');
 
 class Portfolio extends Component {
 
@@ -40,33 +47,21 @@ class Portfolio extends Component {
                         if(element.position === null){
                             return(null);
                         }
-                        if(element.position % 2 === 0){
-                            return(
-                                <ProjectRight
-                                name={element.name}
-                                description={element.description}
-                                skills={element.skills}
-                                url={element.url}
-                                image={element.image}
-                                git={element.git}
-                                key={id}
-                                id={id}
-                                />
-                            )
-                        } else {
-                            return (
-                                <ProjectLeft
-                                name={element.name}
-                                description={element.description}
-                                skills={element.skills}
-                                url={element.url}
-                                image={element.image}
-                                git={element.git}
-                                key={id}
-                                id={id}
-                                />
-                            )
-                        }
+                        
+                        return (
+                            <Project
+                            name={element.name}
+                            description={element.description}
+                            skills={element.skills}
+                            url={element.url}
+                            media={element.media}
+                            git={element.git}
+                            position={element.position}
+                            key={id}
+                            id={id}
+                            />
+                        )
+                        
                     })}
                 </div>
                 <Footer/>

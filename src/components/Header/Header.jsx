@@ -3,7 +3,7 @@ import './Header.css';
 import $ from 'jquery';
 import HeadShot from '../../assets/images/steven2018.jpg';
 
-import resume from '../../assets/resume/steven-horkey-resume.pdf';
+// import resume from '../../assets/resume/steven-horkey-resume.pdf';
 
 const style = {
     name: {
@@ -31,7 +31,8 @@ class Header extends Component{
                         <a href="mailto:code@stevenhorkey.com" className="link font-monospace my-4">code@stevenhorkey.com</a>
                         <br/>
                         <div className="font-ubuntu page-links">
-                            <a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href={resume} download>Resume</a> | <a href="#contact">Contact</a> 
+                            <a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href="#contact">Contact</a> 
+                            {/* <a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href={resume} download>Resume</a> | <a href="#contact">Contact</a>  */}
                         </div>
                         <div>
                             <a href="https://github.com/stevenhorkey"><i className="fab fa-github"></i></a>

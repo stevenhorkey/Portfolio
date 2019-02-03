@@ -4,7 +4,7 @@ import './Footer.css';
 class Footer extends Component{
     render(){
         return(
-            <footer id="contact" className='py-4 bg-dark'>
+            <footer id="contact" className='py-4'>
                 <br/>
                 <div className="container">
                     <div className="row">

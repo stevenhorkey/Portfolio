@@ -13,7 +13,7 @@ class About extends Component{
                             <div>
                                 <h2 className='text-center'>Education</h2>
                                 <ul>
-                                    <li>University of Arizona &bull; 2016 - 2020 &bull; BS Cognitive Science &bull; Computer Science Minor</li>
+                                    <li>University of Arizona &bull; 2016 - 2020 &bull; BS Neuroscience & Cognitive Science &bull; Computer Science Minor &bull; 3.49 GPA</li>
                                     <br/>
                                     <li>University of Arizona Full Stack Flex Program &bull; January 2018 - July 2018</li>
                                     <br/>                            
@@ -26,7 +26,7 @@ class About extends Component{
                             <div>
                                 <h2 className="text-center">About Me</h2>
                                 <p className='text-justify'>
-                                    I am an ambitious full stack developer with a passion and keen eye for responsive, dynamic, and aesthetic design. Currently, I am a full-time cognitive and computer science student at the University of Arizona in Tucson. In addition to this, I am a graduate of their Full Stack Flex program where over I honed my skills as a developer. 
+                                    I am an ambitious full stack developer with a passion and keen eye for responsive, dynamic, and aesthetic design. Currently, I am a full-time cognitive and computer science student at the University of Arizona in Tucson. In addition to this, I am a graduate of their Full Stack Flex program and am now working part-time as a freelance web developer while I finish school. 
                                 </p>
                             </div>
                         </div>
@@ -54,6 +54,8 @@ class About extends Component{
                             <i className="devicon-mongodb-plain-wordmark devicons"></i>
                             <i className="devicon-nodejs-plain-wordmark colored devicons"></i>
                             <i className="devicon-mysql-plain-wordmark devicons"></i>
+                            <i className="devicon-php-plain devicons"></i>
+
                             {/* <img src="assets/images/jekyll.png" className="firebase-icon devicons"/> */}
                         </div>
                     </div>

@@ -1,5 +1,4 @@
 // Images
-import mmImg from './assets/images/mmsite.jpg';
 import gpImg from './assets/images/goalPost.jpg';
 import mongoScraperImg from './assets/images/mongo-scraper.png';
 import burgerImg from './assets/images/burgerish.jpg';
@@ -14,41 +13,62 @@ import gcca from './assets/images/gcca.jpg';
 import data7 from './assets/images/data7.jpg';
 import portfolio from './assets/images/portfolio.jpg';
 import taproot from './assets/images/taproot.png';
+import urantiabookvideo from './assets/videos/urantiabook-video-720.mp4';
+import sogvideo from './assets/videos/seaofglass-video-720.mp4';
+import kvanvideo from './assets/videos/kvan-video-720.mp4';
 
 const projects = [
     {
-        name:'Meme and Meaning',
-        description:'A blog, podcast, and YouTube project of mine where I investigate what it takes to live life well and become a better human being. Expresses my interests in personal development, philosophy, science, spirituality, and psychology.',
-        skills:['React', 'Bootstrap', 'Restful API', 'Adobe Photoshop', 'WP API', 'Mail Chimp', 'CSS', 'HTML'],
-        url:'https://memeandmeaning.com',
-        image:mmImg,
+        name:'KVAN FM Upcoming Site',
+        description:'This site is still in the process of internal review before it\'s release, but it has come along wonderfully. This has been a redesign of the original kvan.fm website and is far more expansive in aesthetics and functionality. I Modeled their mobile app in the browser, integrated their products through the Shopify API, and cleanly presented all their information. Adapted from NAVA Music Theme.',
+        skills:['PHP', 'HTML', 'CSS', 'JQuery', 'MySQL', 'Bootstrap 4', 'Shopify REST API'],
+        url:null,
+        media:kvanvideo,
         git:'',
-        position:7
+        position:2
+    },
+    {
+        name:'The Sea of Glass Rental & Performance Pages',
+        description:'In the Fall of 2018, I performed a total overhaul on my client\'s rental and performance pages for their venue in Tucson. I aimed for a sleek, modern design to capture the beauty of the location while honoring the client\'s specification.',
+        skills:['PHP', 'HTML', 'CSS', 'JQuery', 'MySQL', 'Bootstrap 4'],
+        url:'http://theseaofglass.org/rentals',
+        media:sogvideo,
+        git:'',
+        position:1
+    },
+    {
+        name:'Urantia Book Web Application',
+        description:'This is one of the many freelance projects I\'ve done in my long term contract position. This web application allows users to search through, read, link to, and study The Urantia Book. There is no other version of the book presented in this functional and easy to use way. Entirely mobile responsive and implemented with best coding practices.',
+        skills:['PHP', 'HTML', 'Bootstrap 4', 'JQuery', 'RESTful API', 'MySQL', 'A Rating for Page Speed & SEO'],
+        url:'http://urantiabook.uaspr.org',
+        media:urantiabookvideo,
+        git:'',
+        position:0
     },
     {
         name:'Development & Operations Intern\nAudivity',
-        description:'Also over the summer of 2018, I was an intern and contractor with the podcasting start-up Audivity. Audivity converts written content into professional podcasts using technology, and while there, I learned a ton about web development and audio production. I did a range of things from audio engineering episodes, handling the client production journey, meeting with mentors, and executing on the entire process of product development. ',
-        skills:['Manage Client/Content Relationship', 'Audio Engineering and Production', 'Product Development', 'React', 'JavaScript', 'Mail Chimp', 'CSS'],
-        url:'https://audivity.com',
-        image:audivity,
+        description:"Also over the summer of 2018, I was an intern and contractor with the podcasting start-up Audivity. Audivity converts written content into professional podcasts using technology, and while there, I learned a ton about web development and audio production. I did a range of things from audio engineering episodes, handling the client production journey, meeting with mentors, and executing on the entire process of product development." ,
+        skills:['Manage Client/Content Relationship', 'Audio Engineering', 'Product Development', 'React', 'AWS Sys Admin & DNS Management', 'Mail Chimp', 'Backend Development & Frontend Form Creation'],
+        url:null,
+        media:audivity,
         git:'',
-        position:3
+        position:5
     },
     {
         name:'Student Software Engineer\nUniversity of Arizona Data 7 Institute',
         description:'Over the summer of 2018 at the UA Data7 Institute, I collaborated in a team setting to build upon existing websites used by the biosciences division at the university. Together, we contributed to a greater user experience and functionality on a range of different sites.',
         skills:['Angular', 'Django', 'Python', 'CSS', 'HTML', 'JavaScript'],
-        url:'https://datascience.arizona.edu/',
-        image:data7,
+        url:null,
+        media:data7,
         git:'',
-        position:2
+        position:6
     },
     {
         name:'Web Development Intern\nTrees Please Community Garden',
         description:'I have recently been putting together a brand new site for Trees Please, a non-profit environmental organization here in Tucson. Currently I am adding the entire back-end with user authentication to what was originally a static site that I made with React JS and github pages. The site is scheduled to be launched in August 2018.',
         skills:['React', 'AWS EC2', 'NGINX', 'CSS', 'HTML'],
         url:'https://treesplease.space',
-        image:treesplease,
+        media:treesplease,
         git:'https://github.com/stevenhorkey/aztreesplease',
         position:null
     },
@@ -57,13 +77,13 @@ const projects = [
         description:'As of now, I am in a long-term contract position with a media and property non-profit here in Southern Arizona. I am working on multiple sites with a heavy focus on PHP and MySQL.',
         skills:['React', 'PHP', 'MySQL', 'JavaScript', 'CSS', 'HTML'],
         url: 'http://theseaofglass.org/rentals',
-        image: gcca,
+        media: gcca,
         git: '',
-        position:1
+        position:null
     },
     {
         name: "goalPost",
-        image:gpImg,
+        media:gpImg,
         description: "A goal-based social media platform where users can post, read, edit, and delete goals. Sign up or sign in, follow other members, view their progress, and make positive connections! ",
         url:'https://obscure-escarpment-15577.herokuapp.com/auth',
         git:'https://github.com/stevenhorkey/project-two',
@@ -72,7 +92,7 @@ const projects = [
     },
     {
         name:"stevenhorkey.com",
-        image:portfolio,
+        media:portfolio,
         description: "This website is also an ongoing project of mine. What started out as a homework assignment using basic html and css has turned into one of my favorite pieces utilizing many different technologies.",
         url: null,
         git: null,
@@ -81,7 +101,7 @@ const projects = [
     },
     {
         name:"Mongo DB Scraper",
-        image:mongoScraperImg,
+        media:mongoScraperImg,
         description:"A thought.co article scraper integrated with Mongo DB. Users can scrape the site and save articles for later, or delete them when they are finished. ",
         url:'https://shrouded-sea-11223.herokuapp.com/',
         git:'https://github.com/stevenhorkey/mongo-scraper',
@@ -90,7 +110,7 @@ const projects = [
     },
     {
         name:"Burgerish!",
-        image:burgerImg,
+        media:burgerImg,
         description:"Burgerish is a full-stack logging app utilizing a RESTful API MySQL on the back end handlebars on the front end and Node.js mediating between the two.",
         url:'https://github.com/stevenhorkey/burger',
         git:'https://github.com/stevenhorkey/burger',
@@ -99,7 +119,7 @@ const projects = [
     },
     {
         name:"Friend Finder App",
-        image:ffImg,
+        media:ffImg,
         description:"A fully deployed full-stack app that allows users to answer and submit a survey to find like-minded friends.",
         url:'https://quiet-forest-18242.herokuapp.com/',
         git:'https://github.com/stevenhorkey/friend-finder',
@@ -108,7 +128,7 @@ const projects = [
     },
     {
         name:"Bamazon Store Front",
-        image:bamazonImg,
+        media:bamazonImg,
         description:"A functional example of a command line e-commerce store. It allows managers to add items to inventory check items with low inventory add new products and view current products. It allows supervisors to view product sales by department and allows customers to buy products in the database.",
         url:'https://github.com/stevenhorkey/Amazon-Store-Front-w-Node.js-MySql',
         skills:['MySQL','Node.js','JavaScript','npm inquirer'],
@@ -116,7 +136,7 @@ const projects = [
     },
     {
         name:"Node.js 'Liri' App",
-        image:liriImg,
+        media:liriImg,
         description:"A command line node.js app which takes in parameters and gives you back data. There are options with twitter spotify and OMDB movies. It also writes all commands and results to a text file and has the ability to read commands from other files instead of the command line.",
         url:'https://github.com/stevenhorkey/liri-node-app',
         skills:['Node.js','npm','Twitter API','Spotify API','OMDB Movies API'],
@@ -124,7 +144,7 @@ const projects = [
     },
     {
         name:"Verse",
-        image:verseImg,
+        media:verseImg,
         description:"A fully functional two-player rap battle game that integrates a slick repsonsive design social sharing multiple api's and numerous libraries",
         url:'http://verse.games/',
         git:'https://github.com/stevenhorkey/Verse',
@@ -133,7 +153,7 @@ const projects = [
     },
     {
         name:"GifTastic",
-        image:gifImg,
+        media:gifImg,
         description:'GifTastic is a JQuery based web application which utilizes the Giphy API. The user is able to enter a topic and the amount of gifs they want generated. A button is then dynamically created and once it is clicked...Presto! The gifs are displayed. ',
         url:'https://stevenhorkey.github.io/GifTastic/',
         git:'https://github.com/stevenhorkey/GifTastic',
@@ -142,13 +162,23 @@ const projects = [
     },
     {
         name:"TapRoot",
-        image:taproot,
-        description:'One of the problems that keep average people from visiting farmers markets is the fact that they simply don\'t know what\'s there. TapRoot solves that. It is an online network of vendors and market organizers who post their information, products, and passion online so that users like you and I can view it before we go to the market so that we can shop with confidence as we connect to the source of our food. ',
-        url:'https://taproot.market',
-        git:'https://github.com/stevenhorkey/GifTastic',
-        skills:['Deployed on AWS EC2','Bootstrap 4','Node','Express','MySQL','React', 'React Reveal', 'Passport JS'],
-        position: 4
+        media:taproot,
+        description:'One of the hurdles keeping average people from visiting farmers markets is the fact that they simply don\'t know what\'s there. TapRoot solves that. It is an online network of vendors and market organizers who post their information, products, and passion online so that users like you and I can view it before we go to the market so that we can shop with confidence as we connect to the source of our food.',
+        url:'https://taproot-market.herokuapp.com/',
+        git:'https://github.com/stevenhorkey/farmers-market-app',
+        skills:['Deployed on AWS EC2','Bootstrap 4','Node','Express','MySQL','React', 'Project Management', 'Passport JS'],
+        position: 3
     }
 ]
 
 export default projects;
+
+
+// urantia book
+// sea of glass rental page
+// tap root
+// GCCA Dev Site
+
+
+// audivity
+// u of a
