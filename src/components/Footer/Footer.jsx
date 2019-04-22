@@ -16,7 +16,7 @@ class Footer extends Component{
                                     <a href="mailto:code@stevenhorkey.com" className="mx-auto link">code@stevenhorkey.com</a>
                                     <div className="">
                                         <a href="https://github.com/stevenhorkey"><i className="fab fa-github"></i></a>
-                                        <a href="https://stackoverflow.com/users/9443856/stevedevtech"><i className="fab fa-stack-overflow"></i></a>
+                                        {/* <a href="https://stackoverflow.com/users/9443856/stevedevtech"><i className="fab fa-stack-overflow"></i></a> */}
                                         <a href="https://www.linkedin.com/in/steven-horkey/"><i className="fab fa-linkedin"></i></a>
                 
                                     </div> 

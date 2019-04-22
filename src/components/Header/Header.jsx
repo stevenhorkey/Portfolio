@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Header.css';
 import $ from 'jquery';
-import HeadShot from '../../assets/images/steven2018.jpg';
+import HeadShot from '../../assets/images/small.png';
 
 // import resume from '../../assets/resume/steven-horkey-resume.pdf';
 
@@ -36,7 +36,7 @@ class Header extends Component{
                         </div>
                         <div>
                             <a href="https://github.com/stevenhorkey"><i className="fab fa-github"></i></a>
-                            <a href="https://stackoverflow.com/users/9443856/stevedevtech"><i className="fab fa-stack-overflow"></i></a>
+                            {/* <a href="https://stackoverflow.com/users/9443856/stevedevtech"><i className="fab fa-stack-overflow"></i></a> */}
                             <a href="https://www.linkedin.com/in/steven-horkey/"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div>

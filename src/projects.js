@@ -19,17 +19,17 @@ import kvanvideo from './assets/videos/kvan-video-720.mp4';
 
 const projects = [
     {
-        name:'KVAN FM Upcoming Site',
-        description:'This site is still in the process of internal review before it\'s release, but it has come along wonderfully. This has been a redesign of the original kvan.fm website and is far more expansive in aesthetics and functionality. I Modeled their mobile app in the browser, integrated their products through the Shopify API, and cleanly presented all their information. Adapted from NAVA Music Theme.',
+        name:'KVAN FM',
+        description:'This has been a redesign of the original kvan.fm website and is far more expansive in aesthetics and functionality. I\'ve modeled their mobile app in the browser, integrated their products through the Shopify API, and cleanly presented all their information. Adapted from NAVA Music Theme.',
         skills:['PHP', 'HTML', 'CSS', 'JQuery', 'MySQL', 'Bootstrap 4', 'Shopify REST API'],
-        url:null,
+        url:'https://kvan.fm',
         media:kvanvideo,
         git:'',
         position:2
     },
     {
         name:'The Sea of Glass Rental & Performance Pages',
-        description:'In the Fall of 2018, I performed a total overhaul on my client\'s rental and performance pages for their venue in Tucson. I aimed for a sleek, modern design to capture the beauty of the location while honoring the client\'s specification.',
+        description:'In the Fall of 2018, I performed a total overhaul on my client\'s rental and performance pages for their venue in Tucson. I aimed for a sleek, modern design to capture the beauty of the location while honoring the client\'s specifications.',
         skills:['PHP', 'HTML', 'CSS', 'JQuery', 'MySQL', 'Bootstrap 4'],
         url:'http://theseaofglass.org/rentals',
         media:sogvideo,

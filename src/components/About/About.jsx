@@ -26,7 +26,7 @@ class About extends Component{
                             <div>
                                 <h2 className="text-center">About Me</h2>
                                 <p className='text-justify'>
-                                    I am an ambitious full stack developer with a passion and keen eye for responsive, dynamic, and aesthetic design. Currently, I am a full-time cognitive and computer science student at the University of Arizona in Tucson. In addition to this, I am a graduate of their Full Stack Flex program and am now working part-time as a freelance web developer while I finish school. 
+                                    I am an ambitious full stack developer with a passion and keen eye for responsive, dynamic, and aesthetic design. Currently, I am a full-time cognitive and computer science student at the University of Arizona in Tucson. In addition to this, I am a graduate of their Full Stack Flex program and am now working part-time as a freelance web developer and session musician. 
                                 </p>
                             </div>
                         </div>
