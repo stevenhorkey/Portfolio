@@ -8,7 +8,7 @@ import './About.css';
 class About extends Component{
     render(){
         return(
-            <section className="font-ubuntu py-4 bg-dark" id="about">
+            <section className="font-ubuntu py-4 bg-dark">
                 <div className="container">
                     <div className="row">
                         <div className="col-12 mt-4">
@@ -74,6 +74,7 @@ class About extends Component{
                                 border: '1px solid'
                             }}/>
                             <h2 class="text-center">Projects</h2>
+                            <p class="text-center">Built with best-practices and ready for mobile.</p>
                         </div>
                     </div>
                     {/* <br/>

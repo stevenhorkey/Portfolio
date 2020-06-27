@@ -3,7 +3,7 @@ import './Header.css';
 import $ from 'jquery';
 import HeadShot from '../../assets/images/small.png';
 import Typing from 'react-typing-animation';
-import Particles from 'react-particles-js';
+
 
 
 
@@ -24,14 +24,10 @@ class Header extends Component{
         $('.head-content').hide();
         $('.head-content').fadeIn(2200);
     }
+
     render(){
         return(
             <header className="head vh-102 text-white">
-                <Particles style={{
-                    position : 'absolute',
-                    width: '100%',
-                    left: '0'
-                }} />
                 <div className="row vh-102 justify-content-center align-items-center">
                     <div className="head-content text-center mx-auto col">
                         <img alt='Steven Horkey' src={HeadShot} className="steven-headshot"/>
@@ -57,7 +53,7 @@ class Header extends Component{
                             
                         </div>
                         <br/>
-                        <Typing speed={20}>
+                        <Typing speed={50}>
                             <h3 className="">Let's Bring Your Project to Life</h3>
                         </Typing>
                     </div>

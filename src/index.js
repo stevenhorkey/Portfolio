@@ -63,6 +63,7 @@ class Portfolio extends Component {
                         )
                         
                     })}
+                    <h4 class="text-center mb-4"><em>And many more...</em></h4>
                 </div>
                 <Footer/>
             </Fragment>

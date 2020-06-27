@@ -6,7 +6,7 @@ class Footer extends Component{
         return(
             <footer id="contact" className='py-4 bg-dark'>
                 <br/>
-                <div className="container">
+                <div className="container" id='about'>
                     <div className="row">
                         <div className="col-md-6">
                             <div>
