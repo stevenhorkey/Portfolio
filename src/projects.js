@@ -16,30 +16,34 @@ import taproot from './assets/images/taproot.png';
 import urantiabookvideo from './assets/videos/urantiabook-video-720.mp4';
 import sogvideo from './assets/videos/seaofglass-video-720.mp4';
 import kvanvideo from './assets/videos/kvan-video-720.mp4';
+import campavalonvideo from './assets/videos/campav.mp4';
+import mlrvideo from './assets/videos/mlr.mp4';
+import semavideo from './assets/videos/sema.mp4';
+import gcmbuildervideo from './assets/videos/gcmbuilder.mp4';
 
 const projects = [
     {
         name:'KVAN FM',
-        description:'This has been a redesign of the original kvan.fm website and is far more expansive in aesthetics and functionality. I\'ve modeled their mobile app in the browser, integrated their products through the Shopify API, and cleanly presented all their information. Adapted from NAVA Music Theme.',
-        skills:['PHP', 'HTML', 'CSS', 'JQuery', 'MySQL', 'Bootstrap 4', 'Shopify REST API'],
+        description:'An adapted single-page web app designed to live-stream the client\'s radio programming, display their information and artists to their listeners and funnel users to their custom mobile app.',
+        skills:[],
         url:'https://kvan.fm',
         media:kvanvideo,
         git:'',
-        position:2
+        position:6
     },
     {
-        name:'The Sea of Glass Rental & Performance Pages',
-        description:'In the Fall of 2018, I performed a total overhaul on my client\'s rental and performance pages for their venue in Tucson. I aimed for a sleek, modern design to capture the beauty of the location while honoring the client\'s specifications.',
-        skills:['PHP', 'HTML', 'CSS', 'JQuery', 'MySQL', 'Bootstrap 4'],
-        url:'http://theseaofglass.org/rentals',
+        name:'The Sea of Glass Rental Venue',
+        description:'A full featured site including information on rentals, applications, programs, and much more. Customers can apply to rent ',
+        skills:[],
+        url:'http://theseaofglass.org/',
         media:sogvideo,
         git:'',
-        position:1
+        position:5
     },
     {
         name:'Urantia Book Web Application',
         description:'This is one of the many freelance projects I\'ve done in my long term contract position. This web application allows users to search through, read, link to, and study The Urantia Book. There is no other version of the book presented in this functional and easy to use way. Entirely mobile responsive and implemented with best coding practices.',
-        skills:['PHP', 'HTML', 'Bootstrap 4', 'JQuery', 'RESTful API', 'MySQL', 'A Rating for Page Speed & SEO'],
+        skills:[],
         url:'http://urantiabook.uaspr.org',
         media:urantiabookvideo,
         git:'',
@@ -52,7 +56,7 @@ const projects = [
         url:null,
         media:audivity,
         git:'',
-        position:5
+        position:null
     },
     {
         name:'Student Software Engineer\nUniversity of Arizona Data 7 Institute',
@@ -61,7 +65,7 @@ const projects = [
         url:null,
         media:data7,
         git:'',
-        position:6
+        position:null
     },
     {
         name:'Web Development Intern\nTrees Please Community Garden',
@@ -167,7 +171,43 @@ const projects = [
         url:'https://taproot-market.herokuapp.com/',
         git:'https://github.com/stevenhorkey/farmers-market-app',
         skills:['Deployed on AWS EC2','Bootstrap 4','Node','Express','MySQL','React', 'Project Management', 'Passport JS'],
-        position: 3
+        position: null
+    },
+    {
+        name:'Camp Avalon Website & Reservation System',
+        description:'For Camp Avalon Spiritual Nature Retreat, I built a new site to showcase their fresh branding, and manage client reservations with payment integration through paypal and credit card processing. The site also features an admin dashboard to manage reservations, site notifications, legally binding signed waivers, and more.',
+        skills:[],
+        url:'https://campavalon.org',
+        media:campavalonvideo,
+        git:'',
+        position:1
+    },
+    {
+        name:'Media Agency CMS & Content Builder',
+        description:'Imagine, you are a media agency with a plethora of sites, content to add to all of them, and no way for a non-coder to do so. For this client, I built a site to create, view, edit, and delete content pages across all of their sites, all with minimal configuration. TL;DR: A full fledged Content Management System.',
+        skills:[],
+        url:null,
+        media:gcmbuildervideo,
+        git:'',
+        position:2
+    },
+    {
+        name:'Magic Land Realty',
+        description:'For Magic Land Realty & Investments, I built a modern and sleek website that integrates with a third party MLS solution to allow clients to search and view thousands of properties across the state of Arizona. Optimized for conversion to connect client to realtor for a personal touch.',
+        skills:[],
+        url:'https://magiclandrealty.com',
+        media:mlrvideo,
+        git:'',
+        position:4
+    },
+    {
+        name:'SEMA Research Lab',
+        description:'For the SEMA Neuroscience Research Lab at the University of Arizona, I built a simple, custom wordpress website to showcase their visionary work, research, and team.',
+        skills:[],
+        url:'https://semalab.arizona.edu/',
+        media:semavideo,
+        git:'',
+        position:3
     }
 ]
 

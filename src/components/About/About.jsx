@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Typing from 'react-typing-animation';
+
 import './About.css';
 
 // import jekyll from '../assets/images/jekyll.png';
@@ -9,7 +11,16 @@ class About extends Component{
             <section className="font-ubuntu py-4 bg-dark" id="about">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-12 mt-4">
+                            <div className="text-center" data-aos="flip-down">
+                                    <h5>Whether you need a simple website to relay your business' critical information...</h5>
+                                    <br/>
+                                    <h5>Or a full-blown custom software solution to manage today's challenges...</h5>
+                                    <br/>
+                                    <h5>Together we can make it a reality.</h5>
+                            </div>
+                        </div>
+                        {/* <div className="col-md-6">
                             <div>
                                 <h2 className='text-center'>Education</h2>
                                 <ul>
@@ -29,14 +40,14 @@ class About extends Component{
                                     I am an ambitious full stack developer with a passion and keen eye for responsive, dynamic, and aesthetic design. Currently, I am a full-time cognitive and computer science student at the University of Arizona in Tucson. In addition to this, I am a graduate of their Full Stack Flex program and am now working part-time as a freelance web developer and session musician. 
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <br/>
-                    <div className="row">
+                    {/* <div className="row">
                         <div className="col-md-8 offset-md-2 text-center">
                             <p className="font-italic">I pride myself on being a lifelong learner, self-directed, detail oriented, and an excellent communicator who brings passion and vision to the projects I work on.</p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="row">
                         <div className="mx-auto my-3 text-center" data-aos="flip-down">
                             {/* <a href="https://github.com/stevenhorkey"><i className="devicon-github-plain-wordmark devicons"></i></a> */}
@@ -57,9 +68,15 @@ class About extends Component{
                             <i className="devicon-php-plain devicons"></i>
 
                             {/* <img src="assets/images/jekyll.png" className="firebase-icon devicons"/> */}
+
+                            <hr style={{
+                                color: 'white',
+                                border: '1px solid'
+                            }}/>
+                            <h2 class="text-center">Projects</h2>
                         </div>
                     </div>
-                    <br/>
+                    {/* <br/>
                     <div data-aos="flip-right">
                         <div className="row">
                             <li className="col-md-2 col-xs-6 languages">HTML</li>
@@ -74,13 +91,13 @@ class About extends Component{
                             <li className="col-md-2 col-xs-6 languages">Python</li>
                             <li className="col-md-2 col-xs-6 languages">React</li>
                             <li className="col-md-2 col-xs-6 languages">AWS</li>
-                            <li className="col-md-2 col-xs-6 languages">MongoDB</li>
+                            <li className="col-md-2 col-xs-6 languages">MongoDB</li> */}
                             {/* <!-- <li className="col-md-2 col-xs-6 languages list-none"></li> -->
                             <!-- <li className="col-md-2 col-xs-6 languages list-none"></li> --> */}
-                            <li className="col-md-2 col-xs-6 languages">Express</li>
+                            {/* <li className="col-md-2 col-xs-6 languages">Express</li>
                             <li className="col-md-2 col-xs-6 languages">WordPress</li>
-                        </div>
-                    </div>
+                        </div> */}
+                    {/* </div> */}
                 </div>
                 <br/>
             </section>

@@ -64,6 +64,7 @@ class Project extends Component{
                         </div>
                         : null
                         }
+                        
                     </div>
                 </div>
             </section>
