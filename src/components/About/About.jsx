@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Typing from 'react-typing-animation';
 
 import './About.css';
 
