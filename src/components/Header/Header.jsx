@@ -33,7 +33,6 @@ class Header extends Component{
                         <img alt='Steven Horkey' src={HeadShot} className="steven-headshot"/>
                             <h1 style={style.name} className="font-ezcar">Steven Horkey</h1>
                             <p style={style.label} className="font-ezcar">Website & Software Developer</p>
-                            <p style={style.label} className="font-ezcar">Search Engine Optimization Expert</p>
                         
                         <a href="mailto:stevedevtech@gmail.com" className="link font-monospace my-4">stevedevtech@gmail.com</a>
                         <a  href="https://www.linkedin.com/in/steven-horkey/"><i style={{
